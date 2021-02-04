@@ -6,6 +6,7 @@ const Card = () => {
                 <h5 className="card-title">.</h5>
                 <h5 className="card-title">World</h5>
                 <h5 className="card-title">Covid 19 Map</h5>
+                <h5 className="card-title"># Cases</h5>
             </div>
         </div>
     );
