@@ -1,12 +1,14 @@
 {
   "name": "covid19-map",
   "version": "0.1.0",
+  "homepage": "https://reydavid.github.io/covid19-map/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.6.3",
     "bootstrap": "^4.6.0",
+    "gh-pages": "^3.1.0",
     "jquery": "^1.9.1",
     "leaflet": "^1.7.1",
     "papaparse": "^5.3.0",
@@ -19,6 +21,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
