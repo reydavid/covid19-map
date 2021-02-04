@@ -1,3 +1,3 @@
 # Covid19 Map Project
 
-React Express Node, maybe mongodb...
+Data from the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University
