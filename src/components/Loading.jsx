@@ -11,11 +11,11 @@ const Loading = () => {
     }}>
         <div className="spinner-grow text-success" role="status">
         </div>
-        <div class="spinner-border text-primary" role="status">
+        <div className="spinner-border text-primary" role="status">
         </div>
         <div className="spinner-grow text-warning" role="status">
         </div>
-        <div class="spinner-border text-info" role="status">
+        <div className="spinner-border text-info" role="status">
         </div>
         <div className="spinner-grow text-danger" role="status">
         </div>

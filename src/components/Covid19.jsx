@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import Loading from "./Loading";
 import CovidMap from './CovidMap';
+import LoadCountriesTask from '../tasks/LoadCountriesTask';
 import Legend from './Legend';
-import LoadCountriesTask from '../tasks/LoadCountriesTask'
+import legendItems from '../entities/LegendItems';
 
 const Covid = () => {
     const [countries, setCountries] = useState([]);
-    
+    const legendItemsInReverse = [...legendItems].reverse();
+
     const load = () => {
         const loadCountriesTask = new LoadCountriesTask();
-        loadCountriesTask.load(setCountries);
+        loadCountriesTask.load((countries) => setCountries(countries));
     };
     useEffect(load, []); //page load we tell it to track [] same as componentDidMount
 
@@ -19,8 +21,8 @@ const Covid = () => {
         <Loading />
         ) : (
         <div>
-            <CovidMap />
-            <Legend />
+            <CovidMap countries={countries} />
+            <Legend legendItems={legendItemsInReverse} />
         </div>
         )}
     </div>
