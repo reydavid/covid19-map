@@ -20,7 +20,7 @@ const onEachCountry = (country, layer) => {
 };
 
 return (
-    <MapContainer style={{ height: "90vh" }} zoom={3} center={[30, -20]}>
+    <MapContainer style={{ height: "90vh" }} zoom={3} center={[28, -28]}>
         <GeoJSON
             style={mapStyle}
             data={countries}
